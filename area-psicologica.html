@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Psicológica - Desarrollo Integral</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen bg-gray-50 font-sans antialiased text-gray-800">
+    
+   <header id="main-header" class="sticky top-0 z-50 bg-white shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <!-- Logo del Colegio - MÁS GRANDE -->
+                <img 
+                    src="imagenes/logo-colegio.png" 
+                    alt="Colegio María Auxiliadora" 
+                    class="h-12 w-auto"  
+                >
+                <a href="index.html" class="text-lg md:text-2xl font-extrabold text-magenta tracking-tight hover:text-magenta-dark transition">
+                    Innovando el Desarrollo Integral en Primaria
+                </a>
+            </div>
+            <nav class="flex items-center space-x-2">
+                <!-- Botones de navegación existentes -->
+                <a href="index.html" class="nav-button px-3 py-2 text-xs md:text-sm font-medium rounded-full bg-turquesa-light text-turquesa-dark hover:bg-turquesa hover:text-white transition dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-turquesa-dark">
+                    Inicio
+                </a>
+                <a href="fundamentos.html" class="nav-button px-3 py-2 text-xs md:text-sm font-medium rounded-full bg-turquesa-light text-turquesa-dark hover:bg-turquesa hover:text-white transition dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-turquesa-dark">
+                    Fundamentos
+                </a>
+                <a href="areas-dinamicas.html" class="nav-button px-3 py-2 text-xs md:text-sm font-medium rounded-full bg-turquesa-light text-turquesa-dark hover:bg-turquesa hover:text-white transition dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-turquesa-dark">
+                    Áreas
+                </a>
+                
+                <!-- Botón Modo Oscuro -->
+                <button id="dark-mode-toggle" class="p-2 rounded-full bg-turquesa-light text-turquesa-dark hover:bg-turquesa hover:text-white transition dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-turquesa-dark">
+                    <svg class="w-4 h-4 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                    <svg class="w-4 h-4 dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-magenta mb-4">Área Psicológica</h1>
+            <div class="bg-turquesa-light p-4 rounded-lg">
+                <p class="text-lg text-gray-700">"La psicología educativa busca optimizar los procesos de enseñanza y aprendizaje, permitiendo al docente observar las habilidades de los estudiantes y fortalecer el acompañamiento"</p>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+            
+            <!-- Introducción -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-magenta pb-2">Introducción</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    La psicología educativa busca optimizar los procesos de enseñanza y aprendizaje (Macazana et al., 2021). Permite al docente observar las habilidades de los estudiantes y fortalecer el acompañamiento. La práctica de Don Bosco reflejó principios como la organización de la actividad cognoscitiva conjunta (Zona de Desarrollo Próximo - ZDP de Vygotsky), evidenciando que el aprendizaje es más efectivo con apoyo social y capacidades individuales integradas.
+                </p>
+            </section>
+
+            <!-- Marco Teórico -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-magenta pb-2">Marco Teórico</h2>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-turquesa mb-3">Psicología del Desarrollo Cognitivo</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Según Piaget (1952), los niños en edad de primaria (6-12 años) se encuentran en la etapa de las operaciones concretas, caracterizada por la capacidad de pensar lógicamente sobre eventos concretos, comprender conceptos de conservación y clasificación, y desarrollar habilidades de razonamiento inductivo.
+                    </p>
+                </div>
+
+                <!-- Imagen 1 -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-magenta text-center">
+                    <img 
+                        src="imagenes/area-psicologica/Imagen1.jpg" 
+                        alt="Etapas del desarrollo cognitivo según Piaget"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 1: Etapas del desarrollo cognitivo en la teoría piagetana
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-turquesa mb-3">Teoría Sociocultural de Vygotsky</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Vygotsky (1978) enfatizó la importancia del contexto social y cultural en el desarrollo cognitivo. Su concepto de Zona de Desarrollo Próximo (ZDP) se refiere a la distancia entre lo que un niño puede hacer por sí solo y lo que puede lograr con la guía de un adulto o en colaboración con pares más capaces.
+                    </p>
+                </div>
+
+                <!-- Imagen 2 -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-turquesa text-center">
+                    <img 
+                        src="imagenes/area-psicologica/Imagen2.jpg" 
+                        alt="Zona de Desarrollo Próximo de Vygotsky"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 2: Representación de la Zona de Desarrollo Próximo
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-turquesa mb-3">Desarrollo de la Atención y Memoria</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        En la etapa de primaria, los niños desarrollan progresivamente su capacidad atencional, pasando de una atención involuntaria a voluntaria. La memoria de trabajo se expande, permitiendo manipular mayor cantidad de información. Las estrategias mnemotécnicas y de organización de la información se vuelven más sofisticadas.
+                    </p>
+                </div>
+
+                <!-- Imagen 3 -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-magenta text-center">
+                    <img 
+                        src="imagenes/area-psicologica/Imagen3.jpg" 
+                        alt="Desarrollo de procesos cognitivos en la niñez"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 3: Evolución de los procesos cognitivos en educación primaria
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-turquesa mb-3">Teoría de las Inteligencias Múltiples</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Gardner (1983) propuso que existen múltiples tipos de inteligencia: lingüística, lógico-matemática, espacial, musical, corporal-cinestésica, intrapersonal, interpersonal y naturalista. Esta perspectiva permite reconocer y valorar diferentes talentos y formas de aprendizaje en el aula.
+                    </p>
+                </div>
+
+                <!-- Imagen 4 -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-turquesa text-center">
+                    <img 
+                        src="imagenes/area-psicologica/Imagen4.png" 
+                        alt="Las ocho inteligencias múltiples de Gardner"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 4: Los ocho tipos de inteligencia según Howard Gardner
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-turquesa mb-3">Desarrollo del Pensamiento Crítico</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        El pensamiento crítico implica la capacidad de analizar, evaluar y reconstruir el pensamiento propio. En primaria, se pueden desarrollar habilidades básicas como la identificación de argumentos, la distinción entre hecho y opinión, y la consideración de múltiples perspectivas.
+                    </p>
+                </div>
+
+                <!-- Imagen 5 -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-magenta text-center">
+                    <img 
+                        src="imagenes/area-psicologica/Imagen5.png" 
+                        alt="Desarrollo del pensamiento crítico en niños"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 5: Estrategias para fomentar el pensamiento crítico
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-turquesa mb-3">Motivación y Aprendizaje</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        La teoría de la autodeterminación (Deci y Ryan, 1985) postula que la motivación intrínseca surge de la satisfacción de tres necesidades psicológicas básicas: autonomía, competencia y relación con los demás. Un ambiente que satisfaga estas necesidades promueve un aprendizaje más significativo y duradero.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-turquesa mb-3">Psicología Educativa en el Contexto Salesiano</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Don Bosco, aunque no era psicólogo, aplicó intuitivamente muchos principios de la psicología educativa. Su método del "sistema preventivo" se basa en la comprensión de las necesidades psicológicas de los jóvenes: necesidad de amor, confianza, orientación y oportunidades para desarrollar sus capacidades.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-turquesa mb-3">Evaluación Psicológica en el Ámbito Educativo</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        La evaluación psicológica en educación debe ser comprensiva, multidimensial y orientada a la intervención. Incluye la evaluación de capacidades cognitivas, estilo de aprendizaje, factores motivacionales y socioemocionales, siempre con fines formativos y de mejora.
+                    </p>
+                </div>
+
+            </section>
+
+            <!-- Aplicaciones Prácticas -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-magenta pb-2">Aplicaciones Prácticas en el Aula</h2>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-magenta-light p-4 rounded-lg">
+                        <h4 class="font-semibold text-magenta mb-2">Estrategias Cognitivas</h4>
+                        <ul class="text-gray-700 list-disc list-inside space-y-1">
+                            <li>Organizadores gráficos y mapas conceptuales</li>
+                            <li>Enseñanza de estrategias de memorización</li>
+                            <li>Desarrollo de metacognición</li>
+                            <li>Resolución guiada de problemas</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-turquesa-light p-4 rounded-lg">
+                        <h4 class="font-semibold text-turquesa mb-2">Fomento de la Motivación</h4>
+                        <ul class="text-gray-700 list-disc list-inside space-y-1">
+                            <li>Establecimiento de metas alcanzables</li>
+                            <li>Retroalimentación específica y constructiva</li>
+                            <li>Oportunidades de elección y autonomía</li>
+                            <li>Creación de contextos de aprendizaje significativos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-turquesa">
+                    <h4 class="font-semibold text-gray-800 mb-3">Principios Psicológicos en la Pedagogía Salesiana</h4>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                        <div class="text-center">
+                            <div class="bg-magenta text-white rounded-full w-8 h-8 flex items-center justify-center mx-auto mb-2">1</div>
+                            <p class="text-gray-700">Acompañamiento personalizado según necesidades individuales</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-turquesa text-white rounded-full w-8 h-8 flex items-center justify-center mx-auto mb-2">2</div>
+                            <p class="text-gray-700">Ambiente de confianza que favorece la expresión y el riesgo intelectual</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-magenta text-white rounded-full w-8 h-8 flex items-center justify-center mx-auto mb-2">3</div>
+                            <p class="text-gray-700">Educación preventiva que anticipa dificultades y fortalece recursos</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Referencias Bibliográficas -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-magenta pb-2">Referencias Bibliográficas</h2>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <ul class="text-gray-700 space-y-2 text-sm">
+                        <li>Piaget, J. (1952). The Origins of Intelligence in Children. International Universities Press.</li>
+                        <li>Vygotsky, L. S. (1978). Mind in Society. Harvard University Press.</li>
+                        <li>Gardner, H. (1983). Frames of Mind: The Theory of Multiple Intelligences. Basic Books.</li>
+                        <li>Deci, E. L., & Ryan, R. M. (1985). Intrinsic Motivation and Self-determination in Human Behavior. Plenum.</li>
+                        <li>Macazana, C. et al. (2021). Psicología educativa y procesos de aprendizaje. Editorial San Marcos.</li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Navegación -->
+        <div class="flex justify-between items-center mt-12 pt-8 border-t border-gray-200">
+            <a href="area-emocional.html" class="inline-flex items-center px-6 py-3 bg-turquesa-light text-turquesa-dark rounded-full hover:bg-turquesa hover:text-white transition duration-300">
+                ← Área Emocional
+            </a>
+            <a href="areas-dinamicas.html" class="inline-flex items-center px-6 py-3 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition duration-300">
+                Volver a Áreas
+            </a>
+            <a href="area-social.html" class="inline-flex items-center px-6 py-3 bg-magenta text-white rounded-full hover:bg-magenta-dark transition duration-300">
+                Área Social →
+            </a>
+        </div>
+
+    </main>
+    
+    <!-- Footer MEJORADO -->
+    <footer class="bg-magenta text-white py-8 mt-10 shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Primera línea: Proyecto y Dirección con Logo -->
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p class="text-sm font-light mb-2">
+                        Proyecto Académico: Innovando el Desarrollo Integral en Primaria
+                    </p>
+                    <p class="text-xs md:text-sm">
+                        3a. calle 16-17 zona 3 Quetzaltenango / Instituto María Auxiliadora zona 3.
+                    </p>
+                </div>
+                <!-- Logo UVG al costado -->
+                <div class="flex-shrink-0">
+                    <img 
+                        src="imagenes/logo-uvg.jpg" 
+                        alt="Universidad del Valle de Guatemala - UVG" 
+                        class="logo-universidad"
+                    >
+                </div>
+            </div>
+    
+            <!-- Información del Estudiante -->
+            <div class="bg-white/10 p-4 rounded-lg">
+                <div class="grid md:grid-cols-3 gap-4 text-sm">
+                    <div class="text-center md:text-left">
+                        <p class="font-semibold mb-1">Estudiante:</p>
+                        <p class="text-white/90">Isabel Nicolás Agustín</p>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <p class="font-semibold mb-1">Universidad:</p>
+                        <p class="text-white/90">La Universidad del Valle de Guatemala, Facultad de Educación</p>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <p class="font-semibold mb-1">Carrera:</p>
+                        <p class="text-white/90">Licenciatura en Educación con Especialidad en Educación Primaria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Moral - Desarrollo Integral</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen bg-gray-50 font-sans antialiased text-gray-800">
+    
+   <header id="main-header" class="sticky top-0 z-50 bg-white shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <!-- Logo del Colegio - MÁS GRANDE -->
+                <img 
+                    src="imagenes/logo-colegio.png" 
+                    alt="Colegio María Auxiliadora" 
+                    class="h-12 w-auto"  
+                >
+                <a href="index.html" class="text-lg md:text-2xl font-extrabold text-magenta tracking-tight hover:text-magenta-dark transition">
+                    Innovando el Desarrollo Integral en Primaria
+                </a>
+            </div>
+            <nav class="flex items-center space-x-2">
+                <!-- Botones de navegación existentes -->
+                <a href="index.html" class="nav-button px-3 py-2 text-xs md:text-sm font-medium rounded-full bg-turquesa-light text-turquesa-dark hover:bg-turquesa hover:text-white transition dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-turquesa-dark">
+                    Inicio
+                </a>
+                <a href="fundamentos.html" class="nav-button px-3 py-2 text-xs md:text-sm font-medium rounded-full bg-turquesa-light text-turquesa-dark hover:bg-turquesa hover:text-white transition dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-turquesa-dark">
+                    Fundamentos
+                </a>
+                <a href="areas-dinamicas.html" class="nav-button px-3 py-2 text-xs md:text-sm font-medium rounded-full bg-turquesa-light text-turquesa-dark hover:bg-turquesa hover:text-white transition dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-turquesa-dark">
+                    Áreas
+                </a>
+                
+                <!-- Botón Modo Oscuro -->
+                <button id="dark-mode-toggle" class="p-2 rounded-full bg-turquesa-light text-turquesa-dark hover:bg-turquesa hover:text-white transition dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-turquesa-dark">
+                    <svg class="w-4 h-4 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                    <svg class="w-4 h-4 dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-magenta mb-4">Área Moral</h1>
+            <div class="bg-turquesa-light p-4 rounded-lg">
+                <p class="text-lg text-gray-700">"La formación moral es un proceso formativo que promueve, desde la infancia, la toma de conciencia sobre la conducta social y la capacidad de actuar de manera libre y responsable"</p>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+            
+            <!-- Introducción -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-turquesa pb-2">Introducción</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    La formación moral es un proceso formativo que promueve, desde la infancia, la toma de conciencia sobre la conducta social y la capacidad de actuar de manera libre y responsable (Solís Vargas, 2022). El Sistema Preventivo de Don Bosco (Razón, Religión y Amor) integra la formación moral como eje central, orientando la conducta hacia el bien y promoviendo decisiones guiadas por valores evangélicos. Fomenta el respeto, la empatía y la responsabilidad.
+                </p>
+            </section>
+
+            <!-- Marco Teórico -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-turquesa pb-2">Marco Teórico</h2>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-magenta mb-3">Concepto de Formación Moral</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        La formación moral se refiere al proceso educativo mediante el cual las personas desarrollan la capacidad de discernir entre el bien y el mal, y actúan en consecuencia de manera autónoma y responsable. Según Puig (1996), implica el desarrollo de la conciencia moral, los valores y las virtudes.
+                    </p>
+                </div>
+
+                <!-- Imagen 1 -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-turquesa text-center">
+                    <img 
+                        src="imagenes/area-moral/Imagen1.png" 
+                        alt="Componentes de la formación moral integral"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 1: Elementos fundamentales del desarrollo moral
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-magenta mb-3">Desarrollo de la Conciencia Moral</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        La conciencia moral es la capacidad de juzgar la bondad o maldad de las acciones propias y ajenas. Según Piaget (1932), los niños evolucionan de una moral heterónoma (normas impuestas) a una moral autónoma (normas internalizadas). En primaria, se consolida la transición hacia el pensamiento moral autónomo.
+                    </p>
+                </div>
+
+                <!-- Imagen 2 -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-magenta text-center">
+                    <img 
+                        src="imagenes/area-moral/Imagen2.png" 
+                        alt="Evolución de la conciencia moral según Piaget"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 2: Transición de la moral heterónoma a la autónoma
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-magenta mb-3">Teoría del Desarrollo Moral de Kohlberg</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Lawrence Kohlberg (1981) amplió la teoría de Piaget identificando seis estadios de desarrollo moral agrupados en tres niveles. Los estudiantes de primaria generalmente se encuentran en el nivel convencional, caracterizado por la orientación hacia las expectativas sociales y el mantenimiento del orden.
+                    </p>
+                </div>
+
+                <!-- Imagen 3 -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-turquesa text-center">
+                    <img 
+                        src="imagenes/area-moral/Imagen3.png" 
+                        alt="Estadios del desarrollo moral según Kohlberg"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 3: Los seis estadios del desarrollo moral en la teoría de Kohlberg
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-magenta mb-3">Educación en Virtudes</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        La educación en virtudes, según Aristóteles, consiste en el desarrollo de hábitos buenos que permiten actuar correctamente de manera constante. Las virtudes cardinales (prudencia, justicia, fortaleza y templanza) y las virtudes teologales (fe, esperanza y caridad) constituyen el fundamento de la formación moral cristiana.
+                    </p>
+                </div>
+
+                <!-- Imagen 4 -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-magenta text-center">
+                    <img 
+                        src="imagenes/area-moral/Imagen4.jpg" 
+                        alt="Las virtudes cardinales y teologales"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 4: Sistema de virtudes en la tradición cristiana
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-magenta mb-3">Formación de la Conciencia según la Perspectiva Cristiana</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        El Catecismo de la Iglesia Católica define la conciencia como "el núcleo más secreto y el sagrario del hombre, en el que está solo con Dios" (GS 16). La formación de la conciencia implica educar para el discernimiento, la responsabilidad y la coherencia entre fe y vida.
+                    </p>
+                </div>
+
+                <!-- Imagen 5 -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-turquesa text-center">
+                    <img 
+                        src="imagenes/area-moral/Imagen5.jpg" 
+                        alt="Formación de la conciencia moral cristiana"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 5: Proceso de formación de la conciencia moral
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-magenta mb-3">El Sistema Preventivo y la Formación Moral</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Don Bosco desarrolló el Sistema Preventivo como alternativa al sistema represivo. Se basa en tres pilares: Razón (desarrollo del discernimiento), Religión (valores evangélicos) y Amor (relación educativa basada en la confianza). Este sistema busca formar "buenos cristianos y honrados ciudadanos" a través de la persuasión más que de la coerción.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-magenta mb-3">Educación Moral a través de la Razón</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        La razón en el sistema salesiano implica ayudar a los jóvenes a comprender el porqué de las normas, desarrollar el pensamiento crítico y tomar decisiones conscientes. Se fomenta el diálogo y la reflexión sobre las consecuencias de las acciones.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-magenta mb-3">Educación Moral a través de la Religión</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        La religión proporciona el fundamento trascendente de la moral, presentando los valores evangélicos como guía para la conducta. La figura de Jesús como modelo de vida y las enseñanzas de la Iglesia orientan el desarrollo moral.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-magenta mb-3">Educación Moral a través del Amor</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        El amor educativo (amorevolezza) crea el ambiente de confianza necesario para el crecimiento moral. La relación afectuosa entre educador y educando facilita la internalización de valores y el deseo de actuar correctamente.
+                    </p>
+                </div>
+
+            </section>
+
+            <!-- Estrategias para la Formación Moral -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-turquesa pb-2">Estrategias para la Formación Moral</h2>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-turquesa-light p-4 rounded-lg">
+                        <h4 class="font-semibold text-turquesa mb-2">Estrategias para el Desarrollo Moral</h4>
+                        <ul class="text-gray-700 list-disc list-inside space-y-1">
+                            <li>Discusión de dilemas morales apropiados para la edad</li>
+                            <li>Análisis de consecuencias de acciones morales</li>
+                            <li>Role-playing de situaciones que requieren decisión moral</li>
+                            <li>Estudio de modelos y ejemplos de conducta moral</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-magenta-light p-4 rounded-lg">
+                        <h4 class="font-semibold text-magenta mb-2">Fomento de Valores Morales</h4>
+                        <ul class="text-gray-700 list-disc list-inside space-y-1">
+                            <li>Práctica de la honestidad en el trabajo escolar</li>
+                            <li>Ejercicios de responsabilidad y accountability</li>
+                            <li>Desarrollo del respeto por las diferencias</li>
+                            <li>Fomento de la solidaridad y ayuda mutua</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-magenta">
+                    <h4 class="font-semibold text-gray-800 mb-3">Aplicación del Sistema Preventivo en la Formación Moral</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-magenta text-white rounded-full w-8 h-8 flex items-center justify-center mt-1 mr-4 flex-shrink-0">R</div>
+                            <div>
+                                <h5 class="font-semibold text-magenta mb-1">Razón</h5>
+                                <p class="text-gray-700 text-sm">Explicación clara de las normas, diálogo sobre su fundamento, y desarrollo del discernimiento moral a través de la reflexión guiada</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-turquesa text-white rounded-full w-8 h-8 flex items-center justify-center mt-1 mr-4 flex-shrink-0">R</div>
+                            <div>
+                                <h5 class="font-semibold text-turquesa mb-1">Religión</h5>
+                                <p class="text-gray-700 text-sm">Presentación de los valores evangélicos como inspiración para la conducta moral, y oración como fuente de fortaleza moral</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-magenta text-white rounded-full w-8 h-8 flex items-center justify-center mt-1 mr-4 flex-shrink-0">A</div>
+                            <div>
+                                <h5 class="font-semibold text-magenta mb-1">Amor</h5>
+                                <p class="text-gray-700 text-sm">Creación de un ambiente de confianza donde el estudiante se siente amado y, por tanto, motivado a corresponder con conducta moral</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Evaluación del Desarrollo Moral -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-turquesa pb-2">Evaluación del Desarrollo Moral</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    La evaluación en formación moral debe ser principalmente cualitativa y formativa, centrada en el proceso más que en el resultado. Algunos instrumentos adecuados son:
+                </p>
+                <div class="grid md:grid-cols-2 gap-4 text-sm">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h5 class="font-semibold text-magenta mb-2">Observación Sistemática</h5>
+                        <ul class="text-gray-700 list-disc list-inside space-y-1">
+                            <li>Registro de conductas morales espontáneas</li>
+                            <li>Observación de la capacidad de empatía</li>
+                            <li>Evaluación de la coherencia entre discurso y acción</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h5 class="font-semibold text-turquesa mb-2">Instrumentos de Reflexión</h5>
+                        <ul class="text-gray-700 list-disc list-inside space-y-1">
+                            <li>Diarios de reflexión moral</li>
+                            <li>Portafolios de trabajos sobre valores</li>
+                            <li>Autoevaluación del crecimiento moral</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Referencias Bibliográficas -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-turquesa pb-2">Referencias Bibliográficas</h2>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <ul class="text-gray-700 space-y-2 text-sm">
+                        <li>Kohlberg, L. (1981). The Philosophy of Moral Development. Harper & Row.</li>
+                        <li>Piaget, J. (1932). The Moral Judgment of the Child. Routledge.</li>
+                        <li>Puig, J. M. (1996). La educación moral en la enseñanza obligatoria. Horsori.</li>
+                        <li>Bosco, J. (1877). El sistema preventivo en la educación de la juventud.</li>
+                        <li>Solís Vargas, M. (2022). Formación moral en la educación primaria. Editorial Santillana.</li>
+                        <li>Conferencia Episcopal. (1992). Catecismo de la Iglesia Católica.</li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Navegación -->
+        <div class="flex justify-between items-center mt-12 pt-8 border-t border-gray-200">
+            <a href="area-etica.html" class="inline-flex items-center px-6 py-3 bg-turquesa-light text-turquesa-dark rounded-full hover:bg-turquesa hover:text-white transition duration-300">
+                ← Área Ética
+            </a>
+            <a href="areas-dinamicas.html" class="inline-flex items-center px-6 py-3 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition duration-300">
+                Volver a Áreas
+            </a>
+            <a href="espiritualidad-salesiana.html" class="inline-flex items-center px-6 py-3 bg-magenta text-white rounded-full hover:bg-magenta-dark transition duration-300">
+                Espiritualidad Salesiana →
+            </a>
+        </div>
+
+    </main>
+    
+    <!-- Footer MEJORADO -->
+    <footer class="bg-magenta text-white py-8 mt-10 shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Primera línea: Proyecto y Dirección con Logo -->
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p class="text-sm font-light mb-2">
+                        Proyecto Académico: Innovando el Desarrollo Integral en Primaria
+                    </p>
+                    <p class="text-xs md:text-sm">
+                        3a. calle 16-17 zona 3 Quetzaltenango / Instituto María Auxiliadora zona 3.
+                    </p>
+                </div>
+                <!-- Logo UVG al costado -->
+                <div class="flex-shrink-0">
+                    <img 
+                        src="imagenes/logo-uvg.jpg" 
+                        alt="Universidad del Valle de Guatemala - UVG" 
+                        class="logo-universidad"
+                    >
+                </div>
+            </div>
+    
+            <!-- Información del Estudiante -->
+            <div class="bg-white/10 p-4 rounded-lg">
+                <div class="grid md:grid-cols-3 gap-4 text-sm">
+                    <div class="text-center md:text-left">
+                        <p class="font-semibold mb-1">Estudiante:</p>
+                        <p class="text-white/90">Isabel Nicolás Agustín</p>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <p class="font-semibold mb-1">Universidad:</p>
+                        <p class="text-white/90">La Universidad del Valle de Guatemala, Facultad de Educación</p>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <p class="font-semibold mb-1">Carrera:</p>
+                        <p class="text-white/90">Licenciatura en Educación con Especialidad en Educación Primaria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

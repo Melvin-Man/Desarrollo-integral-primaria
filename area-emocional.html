@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Emocional - Desarrollo Integral</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen bg-gray-50 font-sans antialiased text-gray-800">
+    
+   <header id="main-header" class="sticky top-0 z-50 bg-white shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <!-- Logo del Colegio - MÁS GRANDE -->
+                <img 
+                    src="imagenes/logo-colegio.png" 
+                    alt="Colegio María Auxiliadora" 
+                    class="h-12 w-auto"  
+                >
+                <a href="index.html" class="text-lg md:text-2xl font-extrabold text-magenta tracking-tight hover:text-magenta-dark transition">
+                    Innovando el Desarrollo Integral en Primaria
+                </a>
+            </div>
+            <nav class="flex items-center space-x-2">
+                <!-- Botones de navegación existentes -->
+                <a href="index.html" class="nav-button px-3 py-2 text-xs md:text-sm font-medium rounded-full bg-turquesa-light text-turquesa-dark hover:bg-turquesa hover:text-white transition dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-turquesa-dark">
+                    Inicio
+                </a>
+                <a href="fundamentos.html" class="nav-button px-3 py-2 text-xs md:text-sm font-medium rounded-full bg-turquesa-light text-turquesa-dark hover:bg-turquesa hover:text-white transition dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-turquesa-dark">
+                    Fundamentos
+                </a>
+                <a href="areas-dinamicas.html" class="nav-button px-3 py-2 text-xs md:text-sm font-medium rounded-full bg-turquesa-light text-turquesa-dark hover:bg-turquesa hover:text-white transition dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-turquesa-dark">
+                    Áreas
+                </a>
+                
+                <!-- Botón Modo Oscuro -->
+                <button id="dark-mode-toggle" class="p-2 rounded-full bg-turquesa-light text-turquesa-dark hover:bg-turquesa hover:text-white transition dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-turquesa-dark">
+                    <svg class="w-4 h-4 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                    <svg class="w-4 h-4 dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-magenta mb-4">Área Emocional</h1>
+            <div class="bg-turquesa-light p-4 rounded-lg">
+                <p class="text-lg text-gray-700">"Las competencias emocionales son el conjunto de saberes, destrezas y actitudes que permiten reconocer, comprender, expresar y gestionar adecuadamente las propias emociones y las de los demás"</p>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+            
+            <!-- Introducción -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-turquesa pb-2">Introducción</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Las competencias emocionales son el conjunto de saberes, destrezas y actitudes que permiten reconocer, comprender, expresar y gestionar adecuadamente las propias emociones y las de los demás (Bisquerra y García, 2018). La formación emocional docente es clave para generar ambientes educativos adecuados que favorezcan el desarrollo integral de los estudiantes.
+                </p>
+            </section>
+
+            <!-- Marco Teórico -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-turquesa pb-2">Marco Teórico</h2>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-magenta mb-3">Definición de Competencias Emocionales</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Según Bisquerra y García (2018), las competencias emocionales comprenden cinco dimensiones fundamentales: Conciencia Emocional, Regulación Emocional, Autonomía Emocional, Competencia para la Vida y Bienestar, y Competencias Sociales. Estas competencias son aprendidas y desarrollables a lo largo de la vida.
+                    </p>
+                </div>
+
+                <!-- Imagen 1 -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-turquesa text-center">
+                    <img 
+                        src="imagenes/area-emocional/Imagen1.jpg" 
+                        alt="Dimensiones de las competencias emocionales"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 1: Las cinco dimensiones de las competencias emocionales
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-magenta mb-3">Conciencia Emocional</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        La conciencia emocional implica identificar y comprender las propias emociones y las de los demás. Incluye la capacidad de poner nombre a las emociones, reconocer la relación entre emoción, cognición y comportamiento, y comprender las causas de las emociones.
+                    </p>
+                </div>
+
+                <!-- Imagen 2 -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-magenta text-center">
+                    <img 
+                        src="imagenes/area-emocional/Imagen2.jpg" 
+                        alt="Conciencia emocional - Identificación de emociones"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 2: Proceso de identificación y comprensión emocional
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-magenta mb-3">Regulación Emocional</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        La regulación emocional se refiere a la capacidad de manejar las emociones de forma apropiada. Incluye estrategias como la tolerancia a la frustración, la capacidad de demora de la gratificación, y la gestión del estrés y la ansiedad. Gross (1998) identifica diferentes estrategias de regulación emocional que pueden ser enseñadas en el aula.
+                    </p>
+                </div>
+
+                <!-- Imagen 3 -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-turquesa text-center">
+                    <img 
+                        src="imagenes/area-emocional/Imagen3.jpg" 
+                        alt="Estrategias de regulación emocional"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 3: Estrategias para la regulación emocional
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-magenta mb-3">Autonomía Emocional</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        La autonomía emocional implica desarrollar una autoestima adecuada, actitud positiva hacia la vida, responsabilidad, y capacidad para analizar críticamente las normas sociales. Los estudiantes con autonomía emocional son capaces de tomar decisiones basadas en sus valores y no solo en influencias externas.
+                    </p>
+                </div>
+
+                <!-- Imagen 4 -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-magenta text-center">
+                    <img 
+                        src="imagenes/area-emocional/Imagen4.jpg" 
+                        alt="Desarrollo de la autonomía emocional"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 4: Componentes de la autonomía emocional
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-magenta mb-3">Competencias Sociales</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Las competencias sociales incluyen habilidades para mantener relaciones satisfactorias, comunicarse efectivamente, trabajar en equipo, y resolver conflictos de forma constructiva. Goleman (1995) enfatiza la importancia de la empatía como base de las competencias sociales.
+                    </p>
+                </div>
+
+                <!-- Imagen 5 -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-turquesa text-center">
+                    <img 
+                        src="imagenes/area-emocional/Imagen5.jpg" 
+                        alt="Competencias sociales y empatía"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 5: Desarrollo de competencias sociales en el aula
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-magenta mb-3">Neurociencia de las Emociones</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        La neurociencia ha demostrado que las emociones juegan un papel crucial en el aprendizaje. El sistema límbico, especialmente la amígdala, procesa la información emocional y modula la memoria y la atención. Un estado emocional positivo facilita el aprendizaje, mientras que el estrés crónico puede inhibirlo.
+                    </p>
+                </div>
+
+                <!-- Imagen 6 -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-magenta text-center">
+                    <img 
+                        src="imagenes/area-emocional/Imagen6.jpg" 
+                        alt="Neurociencia de las emociones - Sistema límbico"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 6: Bases neurobiológicas de las emociones
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-magenta mb-3">Inteligencias Múltiples y Emociones</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Gardner (1983), en su teoría de las inteligencias múltiples, incluye la inteligencia intrapersonal (conocimiento de uno mismo) y la inteligencia interpersonal (comprensión de los demás). Estas inteligencias forman la base de lo que posteriormente Goleman denominaría inteligencia emocional.
+                    </p>
+                </div>
+
+                <!-- Imagen 7 -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-turquesa text-center">
+                    <img 
+                        src="imagenes/area-emocional/Imagen7.png" 
+                        alt="Inteligencias múltiples de Gardner"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 7: Las inteligencias múltiples según Howard Gardner
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-magenta mb-3">Educación Emocional en el Contexto Salesiano</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        La pedagogía salesiana, con su enfoque en la "razón, religión y amabilidad", promueve naturalmente el desarrollo emocional. Don Bosco enfatizaba la importancia de conocer el corazón de los jóvenes y crear un ambiente familiar donde pudieran expresar libremente sus emociones y sentimientos.
+                    </p>
+                </div>
+
+                <!-- Imagen 8 -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-magenta text-center">
+                    <img 
+                        src="imagenes/area-emocional/Imagen8.png" 
+                        alt="Educación emocional en la pedagogía salesiana"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 8: Integración de la educación emocional en el sistema salesiano
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-magenta mb-3">Evaluación de Competencias Emocionales</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Existen diversos instrumentos para evaluar el desarrollo emocional en niños, como escalas de autoinforme, observación sistemática, y portfolios emocionales. La evaluación debe ser formativa y tener como objetivo mejorar las prácticas educativas y el desarrollo integral del estudiante.
+                    </p>
+                </div>
+
+                <!-- Imagen 9 -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-turquesa text-center">
+                    <img 
+                        src="imagenes/area-emocional/Imagen9.png" 
+                        alt="Instrumentos de evaluación emocional"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 9: Herramientas para evaluar competencias emocionales
+                    </p>
+                </div>
+
+            </section>
+
+            <!-- Estrategias Didácticas -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-turquesa pb-2">Estrategias Didácticas</h2>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-turquesa-light p-4 rounded-lg">
+                        <h4 class="font-semibold text-turquesa mb-2">Actividades de Conciencia Emocional</h4>
+                        <ul class="text-gray-700 list-disc list-inside space-y-1">
+                            <li>Diario emocional con colores y dibujos</li>
+                            <li>Rueda de las emociones</li>
+                            <li>Identificación de emociones en cuentos y películas</li>
+                            <li>Termómetro emocional personal</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-magenta-light p-4 rounded-lg">
+                        <h4 class="font-semibold text-magenta mb-2">Dinámicas de Regulación Emocional</h4>
+                        <ul class="text-gray-700 list-disc list-inside space-y-1">
+                            <li>Técnicas de respiración consciente</li>
+                            <li>Rincón de la calma en el aula</li>
+                            <li>Estrategias para manejar la frustración</li>
+                            <li>Juegos de roles para resolver conflictos</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Referencias Bibliográficas -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-turquesa pb-2">Referencias Bibliográficas</h2>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <ul class="text-gray-700 space-y-2 text-sm">
+                        <li>Bisquerra, R. y García, E. (2018). Educación emocional. Desclée De Brouwer.</li>
+                        <li>Goleman, D. (1995). Emotional Intelligence. Bantam Books.</li>
+                        <li>Gardner, H. (1983). Frames of Mind: The Theory of Multiple Intelligences. Basic Books.</li>
+                        <li>Gross, J. J. (1998). The emerging field of emotion regulation. Review of General Psychology.</li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Navegación -->
+        <div class="flex justify-between items-center mt-12 pt-8 border-t border-gray-200">
+            <a href="area-afectiva.html" class="inline-flex items-center px-6 py-3 bg-turquesa-light text-turquesa-dark rounded-full hover:bg-turquesa hover:text-white transition duration-300">
+                ← Área Afectiva
+            </a>
+            <a href="areas-dinamicas.html" class="inline-flex items-center px-6 py-3 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition duration-300">
+                Volver a Áreas
+            </a>
+            <a href="area-psicologica.html" class="inline-flex items-center px-6 py-3 bg-magenta text-white rounded-full hover:bg-magenta-dark transition duration-300">
+                Área Psicológica →
+            </a>
+        </div>
+
+    </main>
+    
+    <!-- Footer MEJORADO -->
+    <footer class="bg-magenta text-white py-8 mt-10 shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Primera línea: Proyecto y Dirección con Logo -->
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p class="text-sm font-light mb-2">
+                        Proyecto Académico: Innovando el Desarrollo Integral en Primaria
+                    </p>
+                    <p class="text-xs md:text-sm">
+                        3a. calle 16-17 zona 3 Quetzaltenango / Instituto María Auxiliadora zona 3.
+                    </p>
+                </div>
+                <!-- Logo UVG al costado -->
+                <div class="flex-shrink-0">
+                    <img 
+                        src="imagenes/logo-uvg.jpg" 
+                        alt="Universidad del Valle de Guatemala - UVG" 
+                        class="logo-universidad"
+                    >
+                </div>
+            </div>
+    
+            <!-- Información del Estudiante -->
+            <div class="bg-white/10 p-4 rounded-lg">
+                <div class="grid md:grid-cols-3 gap-4 text-sm">
+                    <div class="text-center md:text-left">
+                        <p class="font-semibold mb-1">Estudiante:</p>
+                        <p class="text-white/90">Isabel Nicolás Agustín</p>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <p class="font-semibold mb-1">Universidad:</p>
+                        <p class="text-white/90">La Universidad del Valle de Guatemala, Facultad de Educación</p>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <p class="font-semibold mb-1">Carrera:</p>
+                        <p class="text-white/90">Licenciatura en Educación con Especialidad en Educación Primaria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>    
+
+    <script src="script.js"></script>
+</body>
+</html>

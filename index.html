@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Innovando el Desarrollo Integral en Primaria</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Enlace a nuestro archivo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen bg-gray-50 font-sans antialiased text-gray-800">
+
+    <!-- 1. Header/Navigation -->
+   <header id="main-header" class="sticky top-0 z-50 bg-white shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <!-- Logo del Colegio - MÁS GRANDE -->
+                <img 
+                    src="imagenes/logo-colegio.png" 
+                    alt="Colegio María Auxiliadora" 
+                    class="h-12 w-auto"  
+                >
+                <a href="index.html" class="text-lg md:text-2xl font-extrabold text-magenta tracking-tight hover:text-magenta-dark transition">
+                    Innovando el Desarrollo Integral en Primaria
+                </a>
+            </div>
+            <nav class="flex items-center space-x-2">
+                <!-- Botones de navegación existentes -->
+                <a href="index.html" class="nav-button px-3 py-2 text-xs md:text-sm font-medium rounded-full bg-turquesa-light text-turquesa-dark hover:bg-turquesa hover:text-white transition dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-turquesa-dark">
+                    Inicio
+                </a>
+                <a href="fundamentos.html" class="nav-button px-3 py-2 text-xs md:text-sm font-medium rounded-full bg-turquesa-light text-turquesa-dark hover:bg-turquesa hover:text-white transition dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-turquesa-dark">
+                    Fundamentos
+                </a>
+                <a href="areas-dinamicas.html" class="nav-button px-3 py-2 text-xs md:text-sm font-medium rounded-full bg-turquesa-light text-turquesa-dark hover:bg-turquesa hover:text-white transition dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-turquesa-dark">
+                    Áreas
+                </a>
+                
+                <!-- Botón Modo Oscuro -->
+                <button id="dark-mode-toggle" class="p-2 rounded-full bg-turquesa-light text-turquesa-dark hover:bg-turquesa hover:text-white transition dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-turquesa-dark">
+                    <svg class="w-4 h-4 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                    <svg class="w-4 h-4 dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+        
+        <!-- Hero Section -->
+        <section class="text-center mb-16 pt-10 hero-background rounded-2xl shadow-2xl overflow-hidden">
+            <div class="hero-content mx-auto max-w-6xl p-6 md:p-12 rounded-2xl m-4">
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-magenta mb-2">
+                    Innovando el Desarrollo Integral en Primaria
+                </h2>
+                <p class="text-lg md:text-xl text-gray-500 font-light mb-8">
+                    Colegio María Auxiliadora, Quetzaltenango
+                </p>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-stretch">
+                    <!-- Video de Presentación -->
+                    <div class="bg-gray-900 aspect-video rounded-xl shadow-2xl overflow-hidden order-2 lg:order-1">
+                        <video 
+                            controls 
+                            class="w-full h-full object-cover"
+                            poster="imagenes/thumbnail-video.jpg" 
+                        >
+                            <source src="imagenes/video-proyecto.mp4" type="video/mp4">
+                            <source src="imagenes/video-proyecto.webm" type="video/webm"> <!-- Opcional -->
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+
+                    <!-- Ruleta Interactiva -->
+                    <div class="bg-white p-6 rounded-xl shadow-2xl border-2 border-turquesa flex flex-col justify-center items-center transition duration-300 hover:ring-4 hover:ring-turquesa-light order-1 lg:order-2">
+                        <!-- Icono Zap (Rayo) -->
+                        <svg class="w-10 h-10 text-turquesa mb-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4 text-center">Ruleta de Desarrollo Integral</h3>
+                        <p class="text-center text-gray-600 mb-6 text-sm md:text-base">
+                            Recurso interactivo clave para iniciar la reflexión sobre las áreas del desarrollo.
+                        </p>
+                        <a 
+                            href="https://wordwall.net/es/resource/101175787/ruleta-de-desarrollo-integral-nivel-primaria" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-sm md:text-base font-medium rounded-full shadow-lg text-white bg-turquesa hover:bg-turquesa-dark transition duration-300 transform hover:scale-[1.05] shadow-turquesa/50"
+                        >
+                            ¡Ir a la Ruleta!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navegación Rápida -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-magenta border-b-4 border-turquesa pb-2 mb-8 text-center">
+                Explora Nuestro Contenido
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Tarjeta Fundamentos -->
+                     <a href="fundamentos.html" class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-magenta hover:shadow-xl transition duration-300 group">
+                         <div class="flex items-center mb-4">
+                             <svg class="w-8 h-8 mr-3 text-magenta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                 <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20v2H6.5A2.5 2.5 0 0 1 4 16.5v-11A2.5 2.5 0 0 1 6.5 3H20v14H6.5A2.5 2.5 0 0 1 4 14.5v-11z"></path>
+                             </svg>
+                             <h3 class="text-xl font-bold text-gray-800 group-hover:text-magenta transition">Fundamentos del Proyecto</h3>
+                         </div>
+                         <p class="text-gray-600 mb-4">
+                             Conoce la justificación, objetivos y metodología de nuestro proyecto educativo.
+                         </p>
+                         <span class="text-magenta font-semibold inline-flex items-center group-hover:translate-x-1 transition">
+                             Ver Fundamentos 
+                             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                             </svg>
+                         </span>
+                     </a>
+
+                <!-- Tarjeta Áreas Teóricas -->
+                     <a href="areas-dinamicas.html" class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-turquesa hover:shadow-xl transition duration-300 group">
+                         <div class="flex items-center mb-4">
+                             <svg class="w-8 h-8 mr-3 text-turquesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                             </svg>
+                             <h3 class="text-xl font-bold text-gray-800 group-hover:text-turquesa transition">Áreas del Desarrollo</h3>
+                         </div>
+                         <p class="text-gray-600 mb-4">
+                             Descubre las siete áreas del desarrollo integral y su marco teórico.
+                         </p>
+                         <span class="text-turquesa font-semibold inline-flex items-center group-hover:translate-x-1 transition">
+                             Explorar Áreas 
+                             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                             </svg>
+                         </span>
+                     </a>
+
+                <!-- Tarjeta Dinámicas -->
+                     <a href="areas-dinamicas.html#dinamicas" class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-magenta hover:shadow-xl transition duration-300 group">
+                         <div class="flex items-center mb-4">
+                             <svg class="w-8 h-8 mr-3 text-magenta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                             </svg>
+                             <h3 class="text-xl font-bold text-gray-800 group-hover:text-magenta transition">Banco de Dinámicas</h3>
+                         </div>
+                         <p class="text-gray-600 mb-4">
+                             Accede a nuestro banco completo de dinámicas lúdicas organizadas por áreas.
+                         </p>
+                         <span class="text-magenta font-semibold inline-flex items-center group-hover:translate-x-1 transition">
+                             Ver Dinámicas 
+                             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                             </svg>
+                         </span>
+                      </a>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer MEJORADO -->
+    <footer class="bg-magenta text-white py-8 mt-10 shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Primera línea: Proyecto y Dirección con Logo -->
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p class="text-sm font-light mb-2">
+                        Proyecto Académico: Innovando el Desarrollo Integral en Primaria
+                    </p>
+                    <p class="text-xs md:text-sm">
+                        3a. calle 16-17 zona 3 Quetzaltenango / Instituto María Auxiliadora zona 3.
+                    </p>
+                </div>
+                <!-- Logo UVG al costado -->
+                <div class="flex-shrink-0">
+                    <img 
+                        src="imagenes/logo-uvg.jpg" 
+                        alt="Universidad del Valle de Guatemala - UVG" 
+                        class="logo-universidad"
+                    >
+                </div>
+            </div>
+    
+            <!-- Información del Estudiante -->
+            <div class="bg-white/10 p-4 rounded-lg">
+                <div class="grid md:grid-cols-3 gap-4 text-sm">
+                    <div class="text-center md:text-left">
+                        <p class="font-semibold mb-1">Estudiante:</p>
+                        <p class="text-white/90">Isabel Nicolás Agustín</p>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <p class="font-semibold mb-1">Universidad:</p>
+                        <p class="text-white/90">La Universidad del Valle de Guatemala, Facultad de Educación</p>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <p class="font-semibold mb-1">Carrera:</p>
+                        <p class="text-white/90">Licenciatura en Educación con Especialidad en Educación Primaria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

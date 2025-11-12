@@ -1,0 +1,397 @@
+
+/* ============================================= */
+/* MODO OSCURO - VARIABLES Y CONFIGURACIÓN */
+/* ============================================= */
+
+:root {
+    /* Colores modo claro (existentes) */
+    --magenta: #E10079;
+    --magenta-light: #FCE4F1;
+    --magenta-dark: #B3005F;
+    --turquesa: #00B4B4;
+    --turquesa-light: #E0F7F7;
+    --turquesa-dark: #008A8A;
+    --gris-oscuro: #374151;
+    --gris-medio: #6B7280;
+    --gris-claro: #F9FAFB;
+    --blanco: #FFFFFF;
+    --texto-oscuro: #1F2937;
+    
+    /* Colores modo oscuro (nuevos) */
+    --fondo-oscuro: #0F172A;
+    --fondo-card-oscuro: #1E293B;
+    --fondo-header-oscuro: #1E293B;
+    --texto-claro: #F1F5F9;
+    --texto-gris-claro: #CBD5E1;
+    --borde-oscuro: #334155;
+    --magenta-oscuro: #F472B6;
+    --turquesa-oscuro: #67E8F9;
+}
+
+/* Modo oscuro automático basado en sistema */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --fondo-principal: var(--fondo-oscuro);
+        --texto-principal: var(--texto-claro);
+    }
+}
+
+/* Clase para modo oscuro */
+.dark-mode {
+    --fondo-principal: var(--fondo-oscuro);
+    --texto-principal: var(--texto-claro);
+}
+
+/* Aplicar variables a elementos */
+body {
+    background-color: var(--fondo-principal, var(--gris-claro));
+    color: var(--texto-principal, var(--texto-oscuro));
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Fuente Inter (similar a la usada en React) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Variables de colores salesianos */
+:root {
+    --magenta: #E10079;
+    --magenta-light: #FCE4F1;
+    --magenta-dark: #B3005F;
+    --turquesa: #00B4B4;
+    --turquesa-light: #E0F7F7;
+    --turquesa-dark: #008A8A;
+    --gris-oscuro: #374151;
+    --gris-medio: #6B7280;
+    --gris-claro: #F9FAFB;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Transiciones suaves para el acordeón */
+.area-content {
+    transition: all 0.5s ease-in-out;
+}
+
+/* Estilos para las tarjetas de dinámicas */
+.dinamica-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dinamica-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Mejoras de accesibilidad para botones */
+button:focus {
+    outline: 2px solid var(--magenta);
+    outline-offset: 2px;
+}
+
+/* Estilos para enlaces de referencia */
+.reference-link {
+    transition: color 0.2s ease;
+}
+
+.reference-link:hover {
+    color: var(--turquesa-dark);
+}
+
+/* Estilos para navegación activa */
+.nav-active {
+    background-color: var(--magenta);
+    color: white;
+}
+
+.nav-active:hover {
+    background-color: var(--magenta-dark);
+}
+
+/* Estilos para botones de navegación */
+.nav-button {
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(225, 0, 121, 0.3);
+}
+
+/* Colores personalizados para fondos */
+.bg-magenta {
+    background-color: var(--magenta);
+}
+
+.bg-turquesa {
+    background-color: var(--turquesa);
+}
+
+.bg-magenta-light {
+    background-color: var(--magenta-light);
+}
+
+.bg-turquesa-light {
+    background-color: var(--turquesa-light);
+}
+
+/* Textos personalizados */
+.text-magenta {
+    color: var(--magenta);
+}
+
+.text-turquesa {
+    color: var(--turquesa);
+}
+
+.text-magenta-dark {
+    color: var(--magenta-dark);
+}
+
+.text-turquesa-dark {
+    color: var(--turquesa-dark);
+}
+
+/* Bordes personalizados */
+.border-magenta {
+    border-color: var(--magenta);
+}
+
+.border-turquesa {
+    border-color: var(--turquesa);
+}
+
+/* Sombras con colores salesianos */
+.shadow-magenta {
+    box-shadow: 0 4px 14px 0 rgba(225, 0, 121, 0.2);
+}
+
+.shadow-turquesa {
+    box-shadow: 0 4px 14px 0 rgba(0, 180, 180, 0.2);
+}
+/* Estilos para la imagen de fondo del inicio */
+.hero-background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('imagenes/fondo-colegio.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Estilos para logos en header y footer */
+.logo-colegio {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-colegio:hover {
+    transform: scale(1.05);
+}
+
+.logo-universidad {
+    height: 35px;
+    width: auto;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.logo-universidad:hover {
+    opacity: 1;
+}
+
+/* Asegurar que el contenido sobre la imagen de fondo sea legible */
+.hero-content {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+}
+
+/* Agrega esto en styles.css si el logo tiene fondo blanco */
+.logo-universidad {
+    height: 35px;
+    width: auto;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+    border-radius: 4px; /* Esquinas ligeramente redondeadas */
+    background-color: white; /* Fondo blanco para mejor contraste */
+    padding: 2px; /* Espacio alrededor del logo */
+}
+
+.logo-universidad:hover {
+    opacity: 1;
+}
+
+/* Agrega esto en styles.css - LOGOS MÁS GRANDES */
+.logo-colegio {
+    height: 50px;  /* Aumentado de 40px */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-colegio:hover {
+    transform: scale(1.05);
+}
+
+.logo-universidad {
+    height: 80px;  /* Aumentado de 35px */
+    width: auto;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+    border-radius: 6px;
+}
+
+.logo-universidad:hover {
+    opacity: 1;
+}
+
+/* Header más espacioso */
+#main-header {
+    min-height: 80px;
+}
+
+/* Asegurar que el contenido sobre la imagen de fondo sea legible */
+.hero-content {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Agregar esto a styles.css */
+.logo-universidad {
+    height: 80px;
+    width: auto;
+    border-radius: 6px;
+    background-color: white;
+    padding: 4px;
+}
+
+/* Estilos para el footer mejorado */
+footer {
+    position: relative;
+}
+
+/* Asegurar que el contenido del footer sea legible */
+footer p {
+    line-height: 1.5;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .logo-universidad {
+        height: px; /* Un poco más pequeño en móviles */
+        margin-top: 10px;
+    }
+    
+    footer .grid {
+        gap: 8px !important;
+    }
+}
+
+/* ============================================= */
+/* ESTILOS ESPECÍFICOS PARA MODO OSCURO */
+/* ============================================= */
+
+/* Fondo general modo oscuro */
+.dark-mode body {
+    background-color: var(--fondo-oscuro);
+    color: var(--texto-claro);
+}
+
+/* Header modo oscuro */
+.dark-mode header {
+    background-color: var(--fondo-header-oscuro);
+    border-bottom: 1px solid var(--borde-oscuro);
+}
+
+/* Cards y contenedores modo oscuro */
+.dark-mode .bg-white {
+    background-color: var(--fondo-card-oscuro) !important;
+    color: var(--texto-claro) !important;
+    border-color: var(--borde-oscuro) !important;
+}
+
+.dark-mode .bg-gray-50 {
+    background-color: #1a2332 !important;
+    color: var(--texto-claro) !important;
+}
+
+.dark-mode .bg-gray-100 {
+    background-color: #1a2332 !important;
+    color: var(--texto-claro) !important;
+}
+
+/* Textos modo oscuro */
+.dark-mode .text-gray-800,
+.dark-mode .text-gray-700,
+.dark-mode .text-gray-600 {
+    color: var(--texto-claro) !important;
+}
+
+.dark-mode .text-gray-500 {
+    color: var(--texto-gris-claro) !important;
+}
+
+/* Bordes modo oscuro */
+.dark-mode .border-gray-200 {
+    border-color: var(--borde-oscuro) !important;
+}
+
+/* Colores salesianos en modo oscuro */
+.dark-mode .text-magenta {
+    color: var(--magenta-oscuro) !important;
+}
+
+.dark-mode .text-turquesa {
+    color: var(--turquesa-oscuro) !important;
+}
+
+.dark-mode .bg-magenta-light {
+    background-color: rgba(244, 114, 182, 0.1) !important;
+}
+
+.dark-mode .bg-turquesa-light {
+    background-color: rgba(103, 232, 249, 0.1) !important;
+}
+
+/* Footer modo oscuro */
+.dark-mode footer {
+    background-color: var(--fondo-header-oscuro) !important;
+}
+
+/* Hero section modo oscuro */
+.dark-mode .hero-background {
+    background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('imagenes/fondo-colegio.jpg') !important;
+}
+
+.dark-mode .hero-content {
+    background-color: rgba(30, 41, 59, 0.95) !important;
+    color: var(--texto-claro) !important;
+}
+
+/* Video player modo oscuro */
+.dark-mode .bg-gray-900 {
+    background-color: #0f172a !important;
+}
+
+/* Tarjetas de áreas modo oscuro */
+.dark-mode .bg-red-500,
+.dark-mode .bg-yellow-500,
+.dark-mode .bg-blue-500,
+.dark-mode .bg-green-500,
+.dark-mode .bg-purple-500,
+.dark-mode .bg-indigo-500,
+.dark-mode .bg-pink-500 {
+    opacity: 0.9;
+}
+
+/* Mejoras de contraste */
+.dark-mode .shadow-lg {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3) !important;
+}
+
+.dark-mode .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3) !important;
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Afectiva - Desarrollo Integral</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen bg-gray-50 font-sans antialiased text-gray-800">
+    
+   <header id="main-header" class="sticky top-0 z-50 bg-white shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <!-- Logo del Colegio - MÁS GRANDE -->
+                <img 
+                    src="imagenes/logo-colegio.png" 
+                    alt="Colegio María Auxiliadora" 
+                    class="h-12 w-auto"  
+                >
+                <a href="index.html" class="text-lg md:text-2xl font-extrabold text-magenta tracking-tight hover:text-magenta-dark transition">
+                    Innovando el Desarrollo Integral en Primaria
+                </a>
+            </div>
+            <nav class="flex items-center space-x-2">
+                <!-- Botones de navegación existentes -->
+                <a href="index.html" class="nav-button px-3 py-2 text-xs md:text-sm font-medium rounded-full bg-turquesa-light text-turquesa-dark hover:bg-turquesa hover:text-white transition dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-turquesa-dark">
+                    Inicio
+                </a>
+                <a href="fundamentos.html" class="nav-button px-3 py-2 text-xs md:text-sm font-medium rounded-full bg-turquesa-light text-turquesa-dark hover:bg-turquesa hover:text-white transition dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-turquesa-dark">
+                    Fundamentos
+                </a>
+                <a href="areas-dinamicas.html" class="nav-button px-3 py-2 text-xs md:text-sm font-medium rounded-full bg-turquesa-light text-turquesa-dark hover:bg-turquesa hover:text-white transition dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-turquesa-dark">
+                    Áreas
+                </a>
+                
+                <!-- Botón Modo Oscuro -->
+                <button id="dark-mode-toggle" class="p-2 rounded-full bg-turquesa-light text-turquesa-dark hover:bg-turquesa hover:text-white transition dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-turquesa-dark">
+                    <svg class="w-4 h-4 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                    <svg class="w-4 h-4 dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-magenta mb-4">Área Afectiva</h1>
+            <div class="bg-magenta-light p-4 rounded-lg">
+                <p class="text-lg text-gray-700">"La educación afectiva y el desarrollo de la inteligencia emocional son elementos fundamentales en la formación integral"</p>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+            
+            <!-- Introducción -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-magenta pb-2">Introducción</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    La educación afectiva y el desarrollo de la inteligencia emocional son elementos fundamentales en la formación integral. El docente debe usar herramientas lúdicas para que el estudiante reconozca e integre sus emociones, identificándolas y canalizándolas. Don Bosco comprendía que la educación debía tocar el corazón de los educandos, fomentando una relación basada en la confianza, el afecto y la razón.
+                </p>
+            </section>
+
+            <!-- Marco Teórico -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-magenta pb-2">Marco Teórico</h2>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-turquesa mb-3">Desarrollo Afectivo en la Niñez</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        El desarrollo afectivo se refiere a la capacidad de experimentar, expresar y gestionar emociones, así como de establecer relaciones positivas con los demás. En la etapa de primaria (6-12 años), los niños desarrollan habilidades socioafectivas cruciales como la empatía, la autorregulación emocional y la capacidad de establecer amistades.
+                    </p>
+                </div>
+
+                <!-- Imagen 1 - TAMAÑO OPTIMIZADO -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-magenta text-center">
+                    <img 
+                        src="imagenes/area-afectiva/afec1.jpg" 
+                        alt="Desarrollo afectivo en niños - Emociones y expresiones"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 1: Expresiones emocionales en el desarrollo infantil
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-turquesa mb-3">Teoría del Apego de Bowlby</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        John Bowlby (1969) destacó la importancia del vínculo afectivo entre el niño y sus figuras de cuidado. Un apego seguro proporciona una base sólida para la exploración del mundo y el desarrollo de relaciones saludables. En el contexto escolar, los docentes pueden convertirse en figuras de apego secundarias que brindan seguridad emocional.
+                    </p>
+                </div>
+
+                <!-- Imagen 2 - TAMAÑO OPTIMIZADO -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-turquesa text-center">
+                    <img 
+                        src="imagenes/area-afectiva/afec2.jpg" 
+                        alt="Teoría del apego - Vínculos afectivos"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 2: Vínculos afectivos en la teoría del apego
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-turquesa mb-3">Inteligencia Emocional según Goleman</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Daniel Goleman (1995) define la inteligencia emocional como la capacidad de reconocer nuestros propios sentimientos y los ajenos, de motivarnos y de manejar adecuadamente las emociones. Incluye cinco componentes: autoconciencia, autorregulación, motivación, empatía y habilidades sociales.
+                    </p>
+                </div>
+
+                <!-- Imagen 3 - TAMAÑO OPTIMIZADO -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-magenta text-center">
+                    <img 
+                        src="imagenes/area-afectiva/afec3.png" 
+                        alt="Componentes de la inteligencia emocional"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 3: Componentes de la inteligencia emocional según Goleman
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-turquesa mb-3">Pedagogía Salesiana y la Dimensión Afectiva</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Don Bosco, en su Sistema Preventivo, otorgaba gran importancia a la dimensión afectiva. Consideraba que "la educación es cosa del corazón" y que el amor y la confianza eran medios más efectivos que el castigo. El ambiente educativo salesiano se caracteriza por la acogida, la confianza y el acompañamiento personalizado.
+                    </p>
+                </div>
+
+                <!-- Imagen 4 - TAMAÑO OPTIMIZADO -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-turquesa text-center">
+                    <img 
+                        src="imagenes/area-afectiva/afec4.png" 
+                        alt="Sistema Preventivo de Don Bosco"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 4: El Sistema Preventivo de Don Bosco
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-turquesa mb-3">Desarrollo de la Autoestima</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        La autoestima se construye a través de experiencias de éxito, reconocimiento y aceptación. Coopersmith (1967) identifica cuatro fuentes principales de autoestima: significancia, competencia, virtud y poder. En el aula, es fundamental crear oportunidades para que los estudiantes experimenten logros y reciban feedback positivo.
+                    </p>
+                </div>
+
+                <!-- Imagen 5 - TAMAÑO OPTIMIZADO -->
+                <div class="my-8 bg-gray-50 p-6 rounded-lg border-l-4 border-magenta text-center">
+                    <img 
+                        src="imagenes/area-afectiva/afec5.png" 
+                        alt="Desarrollo de la autoestima en niños"
+                        class="rounded-lg shadow-lg mx-auto max-w-md w-full h-auto object-contain"
+                    >
+                    <p class="text-center text-gray-500 text-sm mt-3">
+                        Figura 5: Factores que influyen en el desarrollo de la autoestima
+                    </p>
+                </div>
+
+            </section>
+
+            <!-- Estrategias Didácticas -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-magenta pb-2">Estrategias Didácticas</h2>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-magenta-light p-4 rounded-lg">
+                        <h4 class="font-semibold text-magenta mb-2">Actividades de Conciencia Emocional</h4>
+                        <ul class="text-gray-700 list-disc list-inside space-y-1">
+                            <li>Diario de emociones</li>
+                            <li>Termómetro de emociones</li>
+                            <li>Identificación de emociones en cuentos</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-turquesa-light p-4 rounded-lg">
+                        <h4 class="font-semibold text-turquesa mb-2">Dinámicas de Autoexpresión</h4>
+                        <ul class="text-gray-700 list-disc list-inside space-y-1">
+                            <li>Dramatizaciones emocionales</li>
+                            <li>Expresión a través del arte</li>
+                            <li>Compartir experiencias personales</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Referencias Bibliográficas -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-magenta pb-2">Referencias Bibliográficas</h2>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <ul class="text-gray-700 space-y-2 text-sm">
+                        <li>Bowlby, J. (1969). Attachment and Loss. Basic Books.</li>
+                        <li>Goleman, D. (1995). Emotional Intelligence. Bantam Books.</li>
+                        <li>Coopersmith, S. (1967). The Antecedents of Self-esteem. Freeman.</li>
+                        <li>Bosco, J. (1877). El sistema preventivo en la educación de la juventud.</li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Navegación -->
+        <div class="flex justify-between items-center mt-12 pt-8 border-t border-gray-200">
+            <a href="areas-dinamicas.html" class="inline-flex items-center px-6 py-3 bg-turquesa-light text-turquesa-dark rounded-full hover:bg-turquesa hover:text-white transition duration-300">
+                ← Volver a Áreas
+            </a>
+            <a href="area-emocional.html" class="inline-flex items-center px-6 py-3 bg-magenta text-white rounded-full hover:bg-magenta-dark transition duration-300">
+                Área Emocional →
+            </a>
+        </div>
+
+    </main>
+    
+    <!-- Footer MEJORADO -->
+    <footer class="bg-magenta text-white py-8 mt-10 shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Primera línea: Proyecto y Dirección con Logo -->
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p class="text-sm font-light mb-2">
+                        Proyecto Académico: Innovando el Desarrollo Integral en Primaria
+                    </p>
+                    <p class="text-xs md:text-sm">
+                        3a. calle 16-17 zona 3 Quetzaltenango / Instituto María Auxiliadora zona 3.
+                    </p>
+                </div>
+                <!-- Logo UVG al costado -->
+                <div class="flex-shrink-0">
+                    <img 
+                        src="imagenes/logo-uvg.jpg" 
+                        alt="Universidad del Valle de Guatemala - UVG" 
+                        class="logo-universidad"
+                    >
+                </div>
+            </div>
+    
+            <!-- Información del Estudiante -->
+            <div class="bg-white/10 p-4 rounded-lg">
+                <div class="grid md:grid-cols-3 gap-4 text-sm">
+                    <div class="text-center md:text-left">
+                        <p class="font-semibold mb-1">Estudiante:</p>
+                        <p class="text-white/90">Isabel Nicolás Agustín</p>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <p class="font-semibold mb-1">Universidad:</p>
+                        <p class="text-white/90">La Universidad del Valle de Guatemala, Facultad de Educación</p>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <p class="font-semibold mb-1">Carrera:</p>
+                        <p class="text-white/90">Licenciatura en Educación con Especialidad en Educación Primaria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
